@@ -35,6 +35,12 @@ body {
   font-size: 20px;
 }
 
+.container .content a {
+  margin-bottom: 10px;
+  font-size: 20px;
+  text-decoration: none;
+}
+
 .modal {
   display: none;
   position: fixed;
