@@ -4,6 +4,7 @@ const context = stage.getContext("2d");
 const count = document.getElementById("count");
 const max_count = document.getElementById("max-score");
 const modal = document.getElementById("myModal");
+const btn = document.getElementById("btn");
 
 document.addEventListener("keydown", keyPress);
 setInterval(handleGame, 150);
@@ -86,11 +87,9 @@ function handleGame() {
     game_over = true;
   }
 
-  window.onclick = function(event) {
-    if (event.target == modal) {
-      modal.style.display = "none";
-      game_over = false;
-    }
+  btn.onclick = function() {
+    modal.style.display = "none";
+    game_over = false;
   };
 }
 
