@@ -2,6 +2,8 @@ const stage = document.getElementById("stage");
 const context = stage.getContext("2d");
 
 const count = document.getElementById("count");
+const max_count = document.getElementById("max-score");
+const modal = document.getElementById("myModal");
 
 document.addEventListener("keydown", keyPress);
 setInterval(handleGame, 150);
@@ -11,18 +13,22 @@ const len = 25;
 const quantity = 20;
 
 var start = false;
+var game_over = false;
 var score = 0;
+var max_score = 0;
 var direction = { x: 0, y: 0 };
-var position = { x: 10, y: 15 };
+var position = { x: 10, y: 10 };
 var apple = { x: 15, y: 15 };
 
 var trail = [];
-tail = 5;
+tail = 2;
 
 var lastKey = 0;
 
 function handleGame() {
   count.innerHTML = score;
+  max_count.innerHTML = max_score;
+
   position.x += direction.x;
   position.y += direction.y;
 
@@ -54,7 +60,7 @@ function handleGame() {
 
     if (trail[i].x === position.x && trail[i].y === position.y) {
       direction.x = direction.y = 0;
-      tail = 5;
+      tail = 2;
       score = 0;
       lastKey = 0;
     }
@@ -70,41 +76,57 @@ function handleGame() {
     apple.x = Math.floor(Math.random() * quantity);
     apple.y = Math.floor(Math.random() * quantity);
     score += 10;
+    max_score = score;
+    start = true;
   }
+
+  if (start === true && score === 0) {
+    modal.style.display = "block";
+    start = false;
+    game_over = true;
+  }
+
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+      game_over = false;
+    }
+  };
 }
 
 function keyPress(event) {
-  start = true;
-  switch (event.keyCode) {
-    case 37: // left
-      if (lastKey !== 39) {
-        direction.x = -speed;
-        direction.y = 0;
-        lastKey = 37;
-      }
-      break;
-    case 38: // up
-      if (lastKey !== 40) {
-        direction.x = 0;
-        direction.y = -speed;
-        lastKey = 38;
-      }
-      break;
-    case 39: // right
-      if (lastKey !== 37) {
-        direction.x = speed;
-        direction.y = 0;
-        lastKey = 39;
-      }
-      break;
-    case 40: // down
-      if (lastKey !== 38) {
-        direction.x = 0;
-        direction.y = speed;
-        lastKey = 40;
-      }
-      break;
-    default:
-      break;
+  if (!game_over) {
+    switch (event.keyCode) {
+      case 37: // left
+        if (lastKey !== 39) {
+          direction.x = -speed;
+          direction.y = 0;
+          lastKey = 37;
+        }
+        break;
+      case 38: // up
+        if (lastKey !== 40) {
+          direction.x = 0;
+          direction.y = -speed;
+          lastKey = 38;
+        }
+        break;
+      case 39: // right
+        if (lastKey !== 37) {
+          direction.x = speed;
+          direction.y = 0;
+          lastKey = 39;
+        }
+        break;
+      case 40: // down
+        if (lastKey !== 38) {
+          direction.x = 0;
+          direction.y = speed;
+          lastKey = 40;
+        }
+        break;
+      default:
+        break;
+    }
   }
 }
