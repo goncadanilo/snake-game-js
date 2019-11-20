@@ -31,13 +31,13 @@ body {
 .container .content .score {
   display: flex;
   flex-direction: row;
-  margin-top: 20px;
+  margin-top: 5px;
   font-size: 20px;
 }
 
 .container .content a {
-  margin-bottom: 10px;
-  font-size: 20px;
+  margin-bottom: 8px;
+  font-size: 18px;
   text-decoration: none;
 }
 
