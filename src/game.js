@@ -82,7 +82,10 @@ function handleGame() {
   }
 
   if (start === true && score === 0) {
-    modal.style.display = "block";
+    setTimeout(function() {
+      modal.style.display = "block";
+    }, 700);
+
     start = false;
     game_over = true;
   }
