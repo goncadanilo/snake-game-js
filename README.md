@@ -28,7 +28,7 @@
 <br>
 
 <p align="center">
-  <img alt="Snake Game" src=".github/snake-game.jpeg" width="100%">
+  <img alt="Snake Game" src=".github/snake-game.jpeg" width="40%">
 </p>
 
 ## :clipboard: Descrição
