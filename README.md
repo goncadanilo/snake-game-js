@@ -2,6 +2,9 @@
   :snake: Snake Game
 </h1>
 <p align="center">
+  <img alt="Snake Game" src=".github/snake-game.jpeg" width="40%">
+</p>
+<p align="center">
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/goncadanilo/snake-game-js.svg">
 
   <img alt="Repository size" src="https://img.shields.io/github/repo-size/goncadanilo/snake-game-js.svg">
@@ -26,10 +29,6 @@
 </p>
 
 <br>
-
-<p align="center">
-  <img alt="Snake Game" src=".github/snake-game.jpeg" width="40%">
-</p>
 
 ## :clipboard: Descrição
 
