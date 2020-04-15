@@ -27,6 +27,10 @@
 
 <br>
 
+<p align="center">
+  <img alt="Snake Game" src=".github/snake-game.png" width="100%">
+</p>
+
 ## :clipboard: Descrição
 
 O projeto trata-se do clássico jogo da *"cobrinha"* (Snake Game) desenvolvido com JavaScript, com o objetivo de ser apresentado em um trabalho de faculdade sobre Programação Orientada a Eventos. Além de praticar conceitos básicos da linguagem. 
