@@ -18,14 +18,18 @@
 </p>
 
 <p align="center">
-  <a href="#-descricao">Descrição</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#clipboard-descrição">Descrição</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-como-jogar">Como Jogar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#video_game-como-jogar">Como Jogar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-como-contribuir">Como contribuir</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#memo-licença">Licença</a>
 </p>
 
 <br>
+
+<p align="center">
+  <img alt="Snake Game" src=".github/snake-game.png" width="100%">
+</p>
 
 ## :clipboard: Descrição
 
@@ -35,9 +39,9 @@ O projeto trata-se do clássico jogo da *"cobrinha"* (Snake Game) desenvolvido c
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-- **HTML** para montar a estrutura.
-- **CSS** para a estilização.
-- **JavaScript** para o funcionamento.
+- **HTML**
+- **CSS**
+- **JavaScript**
 
 ## :video_game: Como Jogar
 
