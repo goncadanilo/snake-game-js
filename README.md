@@ -1,6 +1,7 @@
 <h1 align="center">
   :snake: Snake Game
 </h1>
+
 <p align="center">
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/goncadanilo/snake-game-js.svg">
 
