@@ -35,9 +35,9 @@ O projeto trata-se do clássico jogo da *"cobrinha"* (Snake Game) desenvolvido c
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-- **HTML** para montar a estrutura.
-- **CSS** para a estilização.
-- **JavaScript** para o funcionamento.
+- **HTML**
+- **CSS**
+- **JavaScript**
 
 ## :video_game: Como Jogar
 
