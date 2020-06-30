@@ -4,6 +4,8 @@
 
 <p align="center">
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/goncadanilo/snake-game-js.svg">
+  
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/top/goncadanilo/snake-game-js.svg">
 
   <img alt="Repository size" src="https://img.shields.io/github/repo-size/goncadanilo/snake-game-js.svg">
   
